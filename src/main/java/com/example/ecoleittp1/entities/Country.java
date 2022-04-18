@@ -22,6 +22,6 @@ public class Country implements Serializable {
     private Long id;
     private String name;
     private String capital;
-    private int flag;
-    private String ext;
+    private String flag;
+    private String comment;
 }

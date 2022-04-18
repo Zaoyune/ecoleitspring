@@ -1,24 +1,17 @@
 package com.example.ecoleittp1;
 
 import com.example.ecoleittp1.entities.Country;
-import com.example.ecoleittp1.entities.Student;
 import com.example.ecoleittp1.repositories.CountryRepository;
-import com.example.ecoleittp1.repositories.StudentRepository;
 import com.example.ecoleittp1.web.Controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.util.List;
-import java.util.Scanner;
-
 @SpringBootApplication
 public class EcoleitTp1Application implements CommandLineRunner {
     @Autowired
     private CountryRepository countryRepository;
-    @Autowired
-    private StudentRepository studentRepository;
     @Autowired
     private Controller controller;
     public static void main(String[] args) {
@@ -27,17 +20,27 @@ public class EcoleitTp1Application implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        Country c1 = countryRepository.save(new Country(null,"Morocco","Rabat",1,""));
-        Country c2 = countryRepository.save(new Country(null,"France","Paris",1,""));
-        Country c3 = countryRepository.save(new Country(null,"USA","Washington",1,""));
-        Country c4 = countryRepository.save(new Country(null,"England","London",1,""));
+        Country c1 = countryRepository.save(new Country(null,"Morocco","Rabat","morocco.png","ergergegergergergzegzergzergzregergergerzgzergerzgerberbe"));
+        Country c2 = countryRepository.save(new Country(null,"France","Paris","france.png","ergergegergergergzegzergzergzregergergerzgzergerzgerberbe"));
+        Country c3 = countryRepository.save(new Country(null,"USA","Washington","usa.png","ergergegergergergzegzergzergzregergergerzgzergerzgerberbe"));
+        Country c4 = countryRepository.save(new Country(null,"England","London","england.png","ergergegergergergzegzergzergzregergergerzgzergerzgerberbe"));
+        Country c5 = countryRepository.save(new Country(null,"Algeria","Algeria","algeria.png","ergergegergergergzegzergzergzregergergerzgzergerzgerberbe"));
+        Country c6 = countryRepository.save(new Country(null,"Spain","Madrid","spain.png","ergergegergergergzegzergzergzregergergerzgzergerzgerberbe"));
+        Country c7 = countryRepository.save(new Country(null,"Germany","Berlin","germany.png","ergergegergergergzegzergzergzregergergerzgzergerzgerberbe"));
+        Country c8 = countryRepository.save(new Country(null,"Canada","Ottawa","canada.png","ergergegergergergzegzergzergzregergergerzgzergerzgerberbe"));
+        Country c9 = countryRepository.save(new Country(null,"Japan","Tokyo","Japan.png","ergergegergergergzegzergzergzregergergerzgzergerzgerberbe"));
+        Country c10 = countryRepository.save(new Country(null,"China","Pekin","china.png","ergergegergergergzegzergzergzregergergerzgzergerzgerberbe"));
+        Country c11 = countryRepository.save(new Country(null,"South Korea","Séoul","Korea.png","ergergegergergergzegzergzergzregergergerzgzergerzgerberbe"));
+        Country c12 = countryRepository.save(new Country(null,"Belgium","Bruxelle","Belgium.png","ergergegergergergzegzergzergzregergergerzgzergerzgerberbe"));
+        Country c13 = countryRepository.save(new Country(null,"Italy","Rome","italy.png","ergergegergergergzegzergzergzregergergerzgzergerzgerberbe"));
+        Country c14 = countryRepository.save(new Country(null,"Portugal","Lisbonne","portugal.png","ergergegergergergzegzergzergzregergergerzgzergerzgerberbe"));
+        Country c15 = countryRepository.save(new Country(null,"Switzerland","Berne","switzerland.png","ergergegergergergzegzergzergzregergergerzgzergerzgerberbe"));
+        Country c16 = countryRepository.save(new Country(null,"Sweden","Stockholm","sweden.png","ergergegergergergzegzergzergzregergergerzgzergerzgerberbe"));
+        Country c17 = countryRepository.save(new Country(null,"Denmark","Copenhagen","denmark.png","ergergegergergergzegzergzergzregergergerzgzergerzgerberbe"));
+        Country c18 = countryRepository.save(new Country(null,"Finland","Helsinki","finland.png","ergergegergergergzegzergzergzregergergerzgzergerzgerberbe"));
 
-        Student s1 = studentRepository.save(new Student(null,"tttttt","ttttttt",20));
-        Student s2 = studentRepository.save(new Student(null,"pppppppp","ppppppp",10));
-        Student s3 = studentRepository.save(new Student(null,"rrrrrrr","rrrrrrrrr",12));
-        Student s4 = studentRepository.save(new Student(null,"zzzzzzzzzz","zzzzzzzzzzz",20));
 
-        do{
+    /*    do{
             System.out.println("Menu");
             System.out.println("1 ==> Students list");
             System.out.println("2 ==> Add Student");
@@ -88,7 +91,7 @@ public class EcoleitTp1Application implements CommandLineRunner {
                     System.out.println(s.getId()+" "+s.getPrenom()+" "+s.getNom()+" "+s.getNote());
                 });
             }
-        }while(true);
+        }while(true);*/
     }
 }
 
